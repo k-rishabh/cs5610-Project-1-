@@ -1,118 +1,148 @@
 # Kavya Kusuma Reddy Korem: Personal Homepage
 
-A personal homepage that introduces who I am, what I've worked on, and a book finder that shows off some real client-side JavaScript — built entirely with vanilla HTML5, CSS3, and ES6 modules.
-
-**Live site:** https://kavya-korem.github.io/cs5610-project1/
+**Live site:** <https://kavya-korem.github.io/cs5610-project1/>  
+**Repository:** <https://github.com/kavya-korem/cs5610-project1>
 
 ## Author
 
-Kavya Kusuma Reddy Korem (korem.k@northeastern.edu)
+Kavya Kusuma Reddy Korem, MS Computer Science, Northeastern University  
+**Email:** <korem.k@northeastern.edu>
 
 ## Class
 
-CS5610.18490 Web Development, Northeastern University, Fall 2026 Semester Full Term. 
+CS5610.18490 Web Development, Northeastern University, Fall 2026 Semester Full Term.
 
-## Project Objective
+**Class link:** [CS5610 Web Development course page](https://johnguerra.co/classes/webDevelopment_online_fall_2026/)
 
-This is my personal homepage for CS5610: a small, honest portfolio site covering who I am, what I've worked on, and a book finder that demonstrates real client-side JavaScript. The site is static and front-end only, with three pages (Home, About, Bookshelf), organized into `css/`, `js/`, and `images/` folders, and loaded as ES6 modules, no frameworks, no component libraries, no jQuery.
+## Project objective
 
-## Creative Component
-
-**What:** an interactive book finder that recommends a book based on genre and mood.
-
-**Where:** the Bookshelf page (`ai-page.html`). The recommendation logic and DOM rendering live in `js/main.js`.
-
-The finder reads a genre and a mood from two `<select>` elements, looks them up against a hand-written recommendations dataset, and builds and inserts the result cards into the DOM with `document.createElement`, no libraries involved.
-
-## Screenshot
-
-<img width="872" height="588" alt="image" src="https://github.com/user-attachments/assets/e1450f76-c3bb-4d90-8a30-53453a346bed" />
-
-
-## Video Demo
-
-https://www.youtube.com/watch?v=vr1FiaU9wmw
-
+A personal homepage that introduces my academic background, technical skills, and selected projects, with a Bookshelf page that shares my interest in reading. The interactive book finder returns three recommendations for a selected genre and mood. The site uses vanilla HTML5, CSS3, and JavaScript modules, with no framework, build step, or backend.
 
 ## Pages
 
-| Page | File | What's on it |
-|------|------|---------------|
-| Home | `index.html` | Intro, skills, and selected projects |
-| About | `about.html` | Background, technical areas, and what I'm currently learning |
-| Bookshelf | `ai-page.html` | Books I've read and an interactive genre/mood book finder |
+| Page      | File           | Content                                                                      |
+| --------- | -------------- | ---------------------------------------------------------------------------- |
+| Home      | `index.html`   | Introduction, current program, technical skills, and three selected projects |
+| About     | `about.html`   | Academic background, technical areas, and current coursework                 |
+| Bookshelf | `ai-page.html` | Three favorite books and an interactive genre and mood book finder           |
 
-## Features
+## Screenshots
 
-- **Interactive book finder:** select a genre and a mood to get a matching book recommendation, generated on the fly and inserted into the DOM.
-- **Hand-written recommendations dataset:** no external API or library — the matching logic and data are original.
-- **Responsive design:** layouts built with Flexbox and Grid that adapt across screen sizes.
-- **Clean code style:** no `!important`, flat ESLint config, and Prettier formatting enforced project-wide.
+These screenshots show the pages running from this project. Desktop and mobile viewport captures are included in [`docs/screenshots/`](docs/screenshots/).
 
-## Technologies
+### Home
 
-- HTML5, CSS3 (Flexbox and Grid, no `!important`)
-- JavaScript (ES6+, loaded as native ES modules)
-- ESLint (flat config, `eslint.config.js`) and Prettier for code quality
-- Git and GitHub Pages for version control and deployment
+![Home page introduction and current program](docs/screenshots/home-preview.png)
 
-## Instructions to Build
+[Home desktop screenshot](docs/screenshots/home-desktop.png)
 
-### Prerequisites
+### About
 
-- Node.js (LTS version) — only needed for the optional linting/formatting tooling
-- Git
+![About page introduction and academic background](docs/screenshots/about-preview.png)
 
-### Run it locally
+[About desktop screenshot](docs/screenshots/about-desktop.png)
 
-Clone the repository:
+### Bookshelf
 
+![Bookshelf section with three favorite book covers](docs/screenshots/bookshelf-preview.png)
+
+[Bookshelf desktop screenshot](docs/screenshots/bookshelf-desktop.png)
+
+### Book finder
+
+![Fantasy and Curious selections with three book recommendations](docs/screenshots/book-finder-results.png)
+
+The illustrated selection returns _The Name of the Wind_ by Patrick Rothfuss, _Jonathan Strange & Mr Norrell_ by Susanna Clarke, and _The Once and Future Witches_ by Alix E. Harrow.
+
+## Creative component
+
+The book finder on `ai-page.html` uses three genres (Fiction, Mystery, and Fantasy) and four moods (Thoughtful, Adventurous, Cozy, and Curious). A local dataset in `js/main.js` covers all 12 combinations, with three title and author pairs for each combination.
+
+Clicking **Find books** reads both selections, clears the previous results, and creates three recommendation articles with `document.createElement` and `textContent`. Results appear without a page reload or an external API request. The controls have associated labels, and the results container uses `aria-live="polite"`.
+
+## Technology
+
+- HTML5 with semantic page sections and descriptive book-cover alt text.
+- CSS3 with Grid, Flexbox, custom properties, and responsive breakpoints at 800px and 500px.
+- Native JavaScript ES modules for the book finder.
+- ESLint and Prettier for development checks.
+- GitHub Pages for the published static site.
+
+## Run locally
+
+The project needs an HTTP server so the browser can load its JavaScript module. Node.js 22.13 or newer is suitable for the included development tools.
+
+From the extracted `cs5610-project1` folder:
+
+```bash
+npm ci
+npm start
 ```
-git clone https://github.com/kavya-korem/cs5610-project1.git
-cd cs5610-project1
+
+Open <http://localhost:8080>. The included server uses Node.js built-in modules and does not require a build step. `PORT=8081 npm start` runs it on a different port if needed.
+
+Alternatively, Python 3 can serve the same folder without installing the development tools:
+
+```bash
+python3 -m http.server 8080
 ```
 
-Open `index.html` directly in a browser (double-click it, or use `open index.html`). This is a static site with no build step required to view it.
+## Formatting and linting
 
-### Check code quality
-
-```
-npm install
-npm run lint          # ESLint over js/
-npm run format         # Apply Prettier formatting
-npm run format:check   # Check formatting without writing changes
+```bash
+npm run format        # apply Prettier
+npm run format:check  # check formatting
+npm run lint          # check JavaScript
+npm run check         # formatting and linting together
 ```
 
-## Project Structure
+## Folder structure
 
-```
+```text
 cs5610-project1/
-├── index.html            # Home page
-├── about.html             # About page
-├── ai-page.html           # Bookshelf page (book finder)
-├── css/                   # Stylesheets
+├── index.html
+├── about.html
+├── ai-page.html
+├── css/
+│   └── style.css
 ├── js/
-│   └── main.js            # Book finder logic and DOM rendering
-├── images/                # Photos and screenshots
-└── docs/
-    └── design-document.md # Project description, personas, user stories, mockups
+│   └── main.js
+├── images/                  # SVG book covers and favicon
+├── design/
+│   ├── design.md
+│   └── mockups/             # supplied page wireframes
+├── docs/
+│   ├── design-document.md   # link to the design document
+│   └── screenshots/        # actual desktop, mobile, and finder captures
+├── slides/
+│   └── project-presentation.pptx
+├── scripts/
+│   └── serve.js
+├── eslint.config.js
+├── package.json
+├── package-lock.json
+├── LICENSE
+└── README.md
 ```
+
+## Design document and presentation
+
+The [design document](design/design.md) describes the project, visitor personas, user stories, mockups, visual decisions, and implementation boundaries, with screenshots of the finished pages.
+
+The [project presentation](slides/project-presentation.pptx) follows the supplied example's sequence: introduction, objective, design and mockups, technologies, highlights, challenges, and demo. It includes actual page and book finder screenshots.
+
+## Video demo
+
+[Project video](https://www.youtube.com/watch?v=vr1FiaU9wmw)
 
 ## Use of GenAI
 
-Generative AI was used only for the third page of the website, `ai-page.html` (Bookshelf).
+The original project documentation reports Claude Code assistance for the Bookshelf page (`ai-page.html`), including genre and mood handling, recommendation data, and result rendering. It identifies the model as Claude Sonnet 5 (`claude-sonnet-5`). The original documentation states that the Home and About implementations were created without generative AI.
 
-- **Tool / model:** Claude Sonnet 5 (`claude-sonnet-5`), via Claude Code (CLI).
-- **What it helped with:** parts of the Bookshelf page's JavaScript functionality, including handling the genre and mood selections, working with the book recommendation data, and generating the recommendation results in the page. Also used for some small content and presentation adjustments on this page.
-- **Prompt (paraphrased):** "Help me build and refine the interactive book finder for my Bookshelf page. The user should be able to select a genre and mood and receive a suitable book recommendation."
-- **Changes after generation:** [Add anything you adjusted by hand after the AI-generated code, e.g. styling tweaks, bug fixes, wording changes]
+The original recorded prompt, paraphrased, was: “Help me build and refine the interactive book finder for my Bookshelf page. The user should be able to select a genre and mood and receive a suitable book recommendation.”
 
-Generative AI was **not** used for the implementation of the Home page (`index.html`) or About page (`about.html`).
-
-## Design Document
-
-See 'docs/design-document.md' for the project description, user personas, user stories, and design mockups produced before implementation.
+For this revision, OpenAI Codex (GPT-6) helped review the supplied source, update the README and design document, adapt the presentation template, capture actual browser screenshots, verify the book finder and responsive layouts, and add the local preview command. This revision preserves the existing page content and recommendation logic. A later code review corrected section-heading semantics in About and Bookshelf and added current-page navigation attributes. The code-review prompt, paraphrased, was: “Fix the HTML section-heading warnings in About and Bookshelf and check the code against the Project 1 rubric.”
 
 ## License
 
-This project is licensed under the MIT License.
+[MIT License](LICENSE), copyright 2026 Kavya Kusuma Reddy Korem.

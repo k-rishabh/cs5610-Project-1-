@@ -286,7 +286,8 @@ h3 {
   border-top: 1px solid var(--line);
 }
 
-.section-heading p {
+.section-heading p,
+.section-heading .section-label {
   margin: 0 0 20px;
 
   color: var(--green);
@@ -295,6 +296,11 @@ h3 {
   font-weight: bold;
 
   letter-spacing: 0.15em;
+}
+
+.section-heading .section-label {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
 }
 
 .section-heading h2 {
@@ -694,7 +700,7 @@ h3 {
   padding-top: 20px;
 }
 
-.book-info h2 {
+.book-info h3 {
   margin: 0 0 5px;
 
   font-size: 1.5rem;

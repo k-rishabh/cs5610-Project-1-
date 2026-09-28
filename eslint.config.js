@@ -48,7 +48,7 @@ export default [
         "error",
         {
           endOfLine: "lf",
-          trailingComma: "es5",
+          trailingComma: "all",
           singleQuote: false,
         },
       ],

@@ -8,16 +8,13 @@ A personal homepage that introduces who I am, what I've worked on, and a book fi
 
 Kavya Kusuma Reddy Korem (korem.k@northeastern.edu)
 
-- GitHub: [@kavya-korem](https://github.com/kavya-korem)
-- LinkedIn: [add your LinkedIn URL here]
-
 ## Class
 
-CS5610.18490 Web Development, Northeastern University — Fall 2026 Semester Full Term. 
+CS5610.18490 Web Development, Northeastern University, Fall 2026 Semester Full Term. 
 
 ## Project Objective
 
-This is my personal homepage for CS5610: a small, honest portfolio site covering who I am, what I've worked on, and a book finder that demonstrates real client-side JavaScript. The site is static and front-end only, with three pages (Home, About, Bookshelf), organized into `css/`, `js/`, and `images/` folders, and loaded as ES6 modules — no frameworks, no component libraries, no jQuery.
+This is my personal homepage for CS5610: a small, honest portfolio site covering who I am, what I've worked on, and a book finder that demonstrates real client-side JavaScript. The site is static and front-end only, with three pages (Home, About, Bookshelf), organized into `css/`, `js/`, and `images/` folders, and loaded as ES6 modules, no frameworks, no component libraries, no jQuery.
 
 ## Creative Component
 
@@ -25,7 +22,7 @@ This is my personal homepage for CS5610: a small, honest portfolio site covering
 
 **Where:** the Bookshelf page (`ai-page.html`). The recommendation logic and DOM rendering live in `js/main.js`.
 
-The finder reads a genre and a mood from two `<select>` elements, looks them up against a hand-written recommendations dataset, and builds and inserts the result cards into the DOM with `document.createElement` — no libraries involved.
+The finder reads a genre and a mood from two `<select>` elements, looks them up against a hand-written recommendations dataset, and builds and inserts the result cards into the DOM with `document.createElement`, no libraries involved.
 
 ## Screenshot
 

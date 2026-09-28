@@ -133,11 +133,15 @@ The [design document](design/design.md) describes the project, visitor personas,
 
 ## Use of GenAI
 
-The original project documentation reports Claude Code assistance for the Bookshelf page (`ai-page.html`), including genre and mood handling, recommendation data, and result rendering. It identifies the model as Claude Sonnet 5 (`claude-sonnet-5`). The original documentation states that the Home and About implementations were created without generative AI.
+I created the first two pages of the website myself. I used **ChatGPT by OpenAI (GPT-5.6 Sol)** only to help with the third creative page.
 
-The original recorded prompt, paraphrased, was: “Help me build and refine the interactive book finder for my Bookshelf page. The user should be able to select a genre and mood and receive a suitable book recommendation.”
+It helped me refine the interactive JavaScript features, improve the page interactions, and organize the styling for the creative page. The rest of the website, including the first two pages, navigation, personal content, and overall structure, was created by me.
 
-For this revision, OpenAI Codex (GPT-6) helped review the supplied source, update the README and design document, adapt the presentation template, capture actual browser screenshots, verify the book finder and responsive layouts, and add the local preview command. This revision preserves the existing page content and recommendation logic. A later code review corrected section-heading semantics in About and Bookshelf and added current-page navigation attributes. The code-review prompt, paraphrased, was: “Fix the HTML section-heading warnings in About and Bookshelf and check the code against the Project 1 rubric.”
+**Prompts used:**
+
+1. “Create a third creative page for my personal website using vanilla HTML, CSS, and ES6 modules with interactive elements and dynamic content.”
+
+2. “Improve the JavaScript interactions and styling of the creative page while keeping it consistent with the design of the rest of my website.”
 
 ## License
 

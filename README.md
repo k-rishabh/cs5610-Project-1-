@@ -84,6 +84,7 @@ before implementation.
 Generative AI was used only for the third page of the website, ai-page.html (Bookshelf).
 
 Tool / model: Claude Sonnet 5 (claude-sonnet-5), via Claude Code (CLI).
+
 How it was used: I used Claude Code while working on the Bookshelf page to help develop and refine the interactive book finder. It was used for parts of the page's JavaScript functionality, including handling the genre and mood selections, working with the book recommendation data, and generating the recommendation results in the page. I also used it to make some small content and presentation adjustments on this page.
 Prompt (paraphrased): "Help me build and refine the interactive book finder for my Bookshelf page. The user should be able to select a genre and mood and receive a suitable book recommendation."
 

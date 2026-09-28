@@ -111,7 +111,7 @@ Generative AI was **not** used for the implementation of the Home page (`index.h
 
 ## Design Document
 
-See `docs/design-document.md` for the project description, user personas, user stories, and design mockups produced before implementation.
+See docs/design-document.md for the project description, user personas, user stories, and design mockups produced before implementation.
 
 ## License
 

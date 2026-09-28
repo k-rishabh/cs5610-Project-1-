@@ -1,0 +1,22 @@
+{
+  "name": "kavya-personal-homepage",
+  "version": "1.0.0",
+  "description": "Kavya Kusuma Reddy Korem's personal homepage for CS5610 Web Development at Northeastern University.",
+  "type": "module",
+  "author": "Kavya Kusuma Reddy Korem",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "eslint js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": "^10.11.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "prettier": "^3.6.2"
+  }
+}

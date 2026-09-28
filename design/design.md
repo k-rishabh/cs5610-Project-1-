@@ -3,7 +3,7 @@
 **Author:** Kavya Kusuma Reddy Korem  
 **Course:** CS5610.18490 Web Development, Northeastern University, Fall 2026  
 **Project:** Project 1, Personal Homepage  
-**Live site:** <https://kavya-korem.github.io/cs5610-project1/>
+**Live site:** <https://kavya-korem.github.io/cs5610-Project-1-/>
 
 ## 1. Project description
 

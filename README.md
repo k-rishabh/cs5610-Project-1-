@@ -1,6 +1,6 @@
 # Kavya Kusuma Reddy Korem: Personal Homepage
 
-**Live site:** <https://kavya-korem.github.io/cs5610-project1/>  
+**Live site:** <https://kavya-korem.github.io/cs5610-Project-1-/>  
 **Repository:** <https://github.com/kavya-korem/cs5610-Project-1->
 
 ## Author

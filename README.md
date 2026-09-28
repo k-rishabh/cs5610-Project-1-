@@ -1,7 +1,7 @@
 # Kavya Kusuma Reddy Korem: Personal Homepage
 
 **Live site:** <https://kavya-korem.github.io/cs5610-project1/>  
-**Repository:** <https://github.com/kavya-korem/cs5610-project1>
+**Repository:** <https://github.com/kavya-korem/cs5610-Project-1->
 
 ## Author
 
@@ -72,7 +72,7 @@ Clicking **Find books** reads both selections, clears the previous results, and 
 
 The project needs an HTTP server so the browser can load its JavaScript module. Node.js 22.13 or newer is suitable for the included development tools.
 
-From the extracted `cs5610-project1` folder:
+From the project folder:
 
 ```bash
 npm ci
@@ -114,8 +114,6 @@ cs5610-project1/
 ├── docs/
 │   ├── design-document.md   # link to the design document
 │   └── screenshots/        # actual desktop, mobile, and finder captures
-├── slides/
-│   └── project-presentation.pptx
 ├── scripts/
 │   └── serve.js
 ├── eslint.config.js
@@ -125,11 +123,9 @@ cs5610-project1/
 └── README.md
 ```
 
-## Design document and presentation
+## Design document
 
 The [design document](design/design.md) describes the project, visitor personas, user stories, mockups, visual decisions, and implementation boundaries, with screenshots of the finished pages.
-
-The [project presentation](slides/project-presentation.pptx) follows the supplied example's sequence: introduction, objective, design and mockups, technologies, highlights, challenges, and demo. It includes actual page and book finder screenshots.
 
 ## Video demo
 

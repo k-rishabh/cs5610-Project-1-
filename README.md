@@ -81,20 +81,13 @@ before implementation.
 
 ## Use of GenAI
 
-Generative AI was used as follows:
+Generative AI was used only for the third page of the website, ai-page.html (Bookshelf).
 
-- **Tool / model:** Claude Sonnet 5 (`claude-sonnet-5`), via Claude Code (CLI).
-- **How it was used:** After the initial site was drafted, I asked Claude
-  Code to review the project against the assignment rubric and bring it
-  into compliance. It: added the missing `package.json`, `eslint.config.js`,
-  and Prettier config; added `type="module"` and author/description meta
-  tags across the HTML pages; removed a duplicate, unlinked "matcha theme"
-  version of the site left over from an earlier draft (`projects.html`,
-  `bookshelf.html`); wrote this README and the design document in
-  `docs/design-document.md`; and set up the local Git repository.
-- **Prompt (paraphrased):** "My current code is not following the
-  [assignment rubric]. Please make the required changes to ensure it
-  follows all of the rubric criteria."
+Tool / model: Claude Sonnet 5 (claude-sonnet-5), via Claude Code (CLI).
+How it was used: I used Claude Code while working on the Bookshelf page to help develop and refine the interactive book finder. It was used for parts of the page's JavaScript functionality, including handling the genre and mood selections, working with the book recommendation data, and generating the recommendation results in the page. I also used it to make some small content and presentation adjustments on this page.
+Prompt (paraphrased): "Help me build and refine the interactive book finder for my Bookshelf page. The user should be able to select a genre and mood and receive a suitable book recommendation."
+
+Generative AI was not used for the implementation of the Home page (index.html) or About page (about.html).
 
 ## License
 

@@ -199,7 +199,11 @@ function showRecommendations() {
   const genre = genreSelect.value;
   const mood = moodSelect.value;
 
-  const books = recommendations[genre][mood];
+  const books = recommendations[genre]?.[mood];
+  if (!books) {
+    results.textContent = "No recommendations for that combination yet.";
+    return;
+  }
 
   results.innerHTML = "";
 
